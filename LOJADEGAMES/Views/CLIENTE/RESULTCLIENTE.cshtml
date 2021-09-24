@@ -1,0 +1,35 @@
+﻿@model LOJADEGAMES.Models.CLASS_CLI
+@{
+    ViewBag.Title = "ResulCliente";
+}
+
+<h2><b>Resultado do preenchimento dos campos do Cliente</b></h2>
+<legend></legend>
+<fieldset>
+    <div class="editor-label"> @Html.DisplayNameFor(m => m.NOME_CLIENTE)</div>
+    <div class="editor-field"> @Html.DisplayFor(m => m.NOME_CLIENTE)</div>
+    <br />
+
+    <div class="editor-label"> @Html.DisplayNameFor(m => m.CPF_CLIENTE)</div>
+    <div class="editor-field"> @Html.DisplayFor(m => m.CPF_CLIENTE)</div>
+    <br />
+
+    <div class="editor-label"> @Html.DisplayNameFor(m => m.DATA_NASC_CLIENTE)</div>
+    <div class="editor-field"> @Html.DisplayFor(m => m.DATA_NASC_CLIENTE)</div>
+    <br />
+
+    <div class="editor-label"> @Html.DisplayNameFor(m => m.EMAIL_CLIENTE)</div>
+    <div class="editor-field"> @Html.DisplayFor(m => m.EMAIL_CLIENTE)</div>
+    <br />
+
+    <div class="editor-label"> @Html.DisplayNameFor(m => m.CEL_CLIENTE)</div>
+    <div class="editor-field"> @Html.DisplayFor(m => m.CEL_CLIENTE)</div>
+    <br />
+
+    <div class="editor-label"> @Html.DisplayNameFor(m => m.END_CLIENTE)</div>
+    <div class="editor-field"> @Html.DisplayFor(m => m.END_CLIENTE)</div>
+
+    <br />
+    <br />
+    @Html.ActionLink("MENU", "INDEX", "HOME")
+</fieldset>

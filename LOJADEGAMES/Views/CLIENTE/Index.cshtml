@@ -1,0 +1,69 @@
+﻿@model  LOJADEGAMES.Models.CLASS_CLI
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3><b>FAÇA O CADASTRO DO CLIENTE PARA COMPRAR GAMES!!!</b></h3>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+<fildset>
+    <legend>PREENCHA OS CAMPOS:</legend>
+    <div class="editor-label">
+        @Html.LabelFor(m => m.NOME_CLIENTE)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.NOME_CLIENTE)
+        @Html.ValidationMessageFor(m => m.NOME_CLIENTE)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(m => m.CPF_CLIENTE)
+    </div>NascCliente
+    <div class="editor-field">
+        @Html.EditorFor(m => m.CPF_CLIENTE)
+        @Html.ValidationMessageFor(m => m.CPF_CLIENTE)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(m => m.DATA_NASC_CLIENTE)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.DATA_NASC_CLIENTE)
+        @Html.ValidationMessageFor(m => m.DATA_NASC_CLIENTE)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(m => m.EMAIL_CLIENTE)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.EMAIL_CLIENTE)
+        @Html.ValidationMessageFor(m => m.EMAIL_CLIENTE)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(m => m.CEL_CLIENTE)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(m => m.CEL_CLIENTE)
+        @Html.ValidationMessageFor(m => m.CEL_CLIENTE)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(m => m.END_CLIENTE)
+    </div>
+    <div class="editor-label">
+        @Html.EditorFor(m => m.END_CLIENTE)
+        @Html.ValidationMessageFor(m => m.END_CLIENTE)
+    </div>
+
+
+    <div>
+        <br /><input type="submit" value="ENVIAR" />
+    </div>
+
+
+
+</fildset>
+}
