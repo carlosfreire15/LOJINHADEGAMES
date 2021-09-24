@@ -40,7 +40,7 @@ namespace LOJADEGAMES.Models
         private DateTime? dtNascCLIENTE = null;
 
         [Display(Name = "EMAIL DO CLIENTE")]
-        [RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*", ErrorMessage = "O formato do email está incorreto")]
+        [RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*", ErrorMessage = "O EMAIL ESTÁ INCORRETO")]
         [StringLength(100, MinimumLength = 10, ErrorMessage = "COLOQUE UM EMAIL ENTRE 10 E 100 CARACTERES")]
         [Required(ErrorMessage = "É OBRIGATÓRIO PREENCHER ESTE CAMPO!")]
         public string EMAIL_CLIENTE { get; set; }
