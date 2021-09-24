@@ -21,7 +21,7 @@ namespace LOJADEGAMES.Controllers
         {
             if (ModelState.IsValid)
             {
-                return View("ResulCliente", cliente);
+                return View("RESULTCLIENTE", cliente);
             }
             return View(cliente);
         }
