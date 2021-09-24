@@ -122,10 +122,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CLIENTEController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JOGOController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CLASS_CLI.cs" />
+    <Compile Include="Models\CLASS_JOGO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +168,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\CLIENTE\Index.cshtml" />
     <Content Include="Views\CLIENTE\RESULTCLIENTE.cshtml" />
+    <Content Include="Views\JOGO\Index.cshtml" />
+    <Content Include="Views\JOGO\RESULTJOGO.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
