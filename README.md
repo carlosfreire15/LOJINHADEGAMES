@@ -5,5 +5,7 @@ OBS: professora Nívia, meu notebook quebrou há algumas semanas e não consegui
 Por sorte, arranjei um outro notebook hoje (24/09/2021), vide a criação do repositório.
 Consegui fazer grande parte do projeto, porém algumas partes (Especialmente do banco, faltaram por falta de tempo).
 --------------------------
+POR ESSES E UM PROBLEMA NO MYSQL, O PROJETO NÃO RODA.
+--------------------------
 CARLOS EDUARDO MARTINS FREIRE
 2 ETIM DS -- ETEC BASILIDES DE GODOY
