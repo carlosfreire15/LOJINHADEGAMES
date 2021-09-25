@@ -1,5 +1,5 @@
 # LOJINHADEGAMES
-Este é o lojinha pq sim.
+Este é o "LOJINHA PQ SIM".
 
 OBS: professora Nívia, meu notebook quebrou há algumas semanas e não consegui ter outro para programar o visual studio. 
 Por sorte, arranjei um outro notebook hoje (24/09/2021), vide a criação do repositório.
