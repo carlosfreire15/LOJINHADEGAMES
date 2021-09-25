@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using LOJADEGAMES.Models;
+using LOJADEGAMES.Repositorio;
 
 namespace LOJADEGAMES.Controllers
 {
@@ -15,20 +16,13 @@ namespace LOJADEGAMES.Controllers
             var jogo = new CLASS_JOGO();
             return View(jogo);
         }
+        Acoes ac = new Acoes();
         [HttpPost]
 
         public ActionResult Index(CLASS_JOGO jogo)
         {
-            if (ModelState.IsValid)
-            {
-                return View("RESULTJOGO", jogo);
-            }
-            return View(jogo);
-        }
-
-        public ActionResult ResulJogo(CLASS_JOGO jogo)
-        {
-            return View(jogo);
+                ac.CadastrarJogo(jogo);
+                return View(jogo);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using LOJADEGAMES.Models;
+using LOJADEGAMES.Repositorio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,14 +16,12 @@ namespace LOJADEGAMES.Controllers
             var cliente = new CLASS_CLI();
             return View(cliente);
         }
+        Acoes ac = new Acoes();
         [HttpPost]
 
         public ActionResult Index(CLASS_CLI cliente)
         {
-            if (ModelState.IsValid)
-            {
-                return View("RESULTCLIENTE", cliente);
-            }
+            ac.CadastrarCliente(cliente);
             return View(cliente);
         }
     }

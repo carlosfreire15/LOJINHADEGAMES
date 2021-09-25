@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using LOJADEGAMES.Models;
+using LOJADEGAMES.Repositorio;
 
 namespace LOJADEGAMES.Controllers
 {
@@ -14,14 +15,18 @@ namespace LOJADEGAMES.Controllers
             var funcionario = new CLASS_FUNCIONARIO();
             return View(funcionario);
         }
+        Acoes ac = new Acoes();
         [HttpPost]
         public ActionResult Index(CLASS_FUNCIONARIO funcionario)
         {
-            if (ModelState.IsValid)
-            {
-                return View("RESULTFUNCIONARIO", funcionario);
-            }
+            ac.CadastrarFuncionario(funcionario);
             return View(funcionario);
+        }
+        public ActionResult ListarFuncionario()
+        {
+            var ExibirFunc = new Acoes();
+            var TodosFunc = ExibirFunc.ListarFuncionario();
+            return View(TodosFunc);
         }
     }
 }
